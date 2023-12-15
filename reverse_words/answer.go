@@ -26,6 +26,7 @@ func Revers(text string) string {
 	return answer
 }
 
+// Revers2 разворачиваем слова с сохранением их порядка
 func Revers2(text string) string {
 
 	textSplit := strings.Split(text, " ")
