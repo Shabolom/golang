@@ -1,3 +1,3 @@
-module example.com/m
+module timur
 
 go 1.21.5

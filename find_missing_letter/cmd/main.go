@@ -1,21 +1,9 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+import "timur/find_missing_letter"
 
 func main() {
 
-	alphabet := []string{}
-	for i := 'a'; i <= 'z'; i++ {
-		alphabet = append(alphabet, string(i))
-	}
-	for i := 'A'; i <= 'Z'; i++ {
-		alphabet = append(alphabet, string(i))
-	}
-
-	text := strings.Join(alphabet, "")
-	fmt.Println(text)
+	println(finder.MissingLetter("acftk"))
 
 }
