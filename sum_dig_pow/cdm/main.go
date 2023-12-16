@@ -7,6 +7,6 @@ import (
 
 func main() {
 
-	fmt.Println(sum.SqerId(1, 100))
+	fmt.Println(sum.SqerId(12157692622039623242, 12157692622039625639))
 
 }
