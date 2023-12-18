@@ -1,16 +1,27 @@
 package sum
 
 import (
-	"fmt"
-	"math"
 	"strconv"
 )
+
+func SqeUp(digit, degree uint64) uint64 {
+
+	back := uint64(1)
+
+	for i := 0; uint64(i) < degree; i++ {
+
+		if i >= 0 {
+			back *= digit
+		}
+	}
+	return back
+}
 
 // SqerId преобразуем число на его порядок по айди + 1
 func SqerId(start, end uint64) []uint64 {
 
 	mass := []uint64{}
-	var sums float64
+	var sums uint64
 
 	for start < end {
 
@@ -21,10 +32,10 @@ func SqerId(start, end uint64) []uint64 {
 			}
 
 			if len(strconv.FormatUint(start, 10)) > 1 {
-				sums += math.Pow(float64(el-'0'), float64(i+1))
-				if uint64(sums) == start {
-					fmt.Println(start, sums)
-					mass = append(mass, uint64(sums))
+				sums += SqeUp(uint64(el-'0'), uint64(i+1))
+
+				if sums == start {
+					mass = append(mass, sums)
 				}
 			}
 		}
