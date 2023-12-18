@@ -4,6 +4,7 @@ import (
 	"strings"
 )
 
+// ToWeirdCase преобразуем каждую не четную букву в заглавную а чет в обычную
 func ToWeirdCase(text string) string {
 
 	textSplit := strings.Split(text, " ")
