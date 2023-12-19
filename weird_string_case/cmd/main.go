@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	println(string_case.ToWeirdCase("This is a test Looks like you passed"))
+	println(string_case.ToWeirdCase2("This is a test Looks like you passed"))
 }
