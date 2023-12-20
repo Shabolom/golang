@@ -25,3 +25,15 @@ func BallUp(h, bounce, window float64) int {
 	}
 	return answer
 }
+
+func BallUp2(h, bounce, window float64) int {
+
+	answer := -1
+	if h <= 0 || (bounce <= 0 && bounce >= 1) || window >= h {
+		return answer
+	}
+	for ; h > window; h *= bounce {
+		answer += 2
+	}
+	return answer
+}
