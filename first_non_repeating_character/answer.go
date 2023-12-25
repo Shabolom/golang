@@ -3,7 +3,6 @@ package character
 import "strings"
 
 func FirstNonRepeating(text string) string {
-	//your code here
 
 	text2 := strings.ToLower(text)
 

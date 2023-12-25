@@ -1,4 +1,4 @@
-package evenindex
+package find_evenindex
 
 // Find находим индекс где по левую и по правую сторону равные значения
 func Find(mass []int) int {
