@@ -35,3 +35,13 @@ func Cakes(recipe, available map[string]int) int {
 
 	return answer
 }
+
+func Cakes2(recipe, available map[string]int) int {
+	var least int = 1e9
+	for material, need := range recipe {
+		if available[material]/need < least {
+			least = available[material] / need
+		}
+	}
+	return least
+}

@@ -43,7 +43,7 @@ func main() {
 	//}
 	//fmt.Println(answer)
 
-	fmt.Println(the_baker.Cakes(
+	fmt.Println(the_baker.Cakes2(
 		map[string]int{"eggs": 1, "flour": 500, "sugar": 200},
-		map[string]int{"eggs": 5, "flour": 1200, "milk": 200, "sugar": 1200}))
+		map[string]int{"flour": 1200, "milk": 200, "sugar": 1200}))
 }
